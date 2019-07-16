@@ -7,3 +7,31 @@ title{
     font-family: serif;
     color: floralwhite;
 }
+.sm {
+    height: 40px;
+    width: 40px;
+}
+#foot {
+    order:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#foot1 {
+    margin-block-start: 0em;
+    margin: 0em;
+    margin-block-end: 0em;
+    order: 1;
+    width:20%;
+}
+#foot2 {
+    order:2;
+    width: 20%;
+}
+#foot3{
+    order:3;
+    width: 20%;
+}
+#foot4 {
+    order:4;
+    width: 20%;
+}
