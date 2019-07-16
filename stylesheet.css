@@ -249,51 +249,90 @@ button:hover {
     color: rgb(26, 29, 226);
   }
 
-/*Nastavení profilů, textové části, několik vrstev flex povelu*/
-#popprof{
+/*Nastavení profilů, textové části*/
+#vrsek{
+    justify-content: space-evenly;      /*nadřazený flex display*/
+    display: flex;                      
+    flex-wrap: wrap;
+}
+    #levo{
+        flex-direction:column;                  /*Levá strana stránky*/
+        width: 20%;
         justify-content: space-evenly;
+        order: 1;
         display: flex;
         flex-wrap: wrap;
-}
-#obrazek{
-    padding: 3em;
-    width: 20%;
-    order: 1;
-}
-#popis{
+    }
+        #obrazek{
+            padding: 3em;                       /*Dvě podkategorie, obrázek a lokace*/
+            width: 80%;
+            order: 1;
+        }
+        #loc{
+            width: 100%;
+            justify-content: space-evenly;
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    #pravo{
+        align-items: flex-start;
+        width: 60%;                         /*Pravá strana stránky*/
+        justify-content: space-evenly;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #zkus{
+            order: 1;
+            display: flex;                                  /*Dvě podkategorie*/
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction:column;
+        }
+        #momcil{
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction:column;
+        }
+#spodek{
     align-items: flex-start;
-    width: 60%;
-    justify-content: space-evenly;
-    order: 2;
+    justify-content: space-evenly;                 /*spodní část stránky*/       
     display: flex;
     flex-wrap: wrap;
 }
-#prv{
-    flex-direction:column;
-    justify-content: space-evenly;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-}
-#druh{
-    flex-direction:column;
-    justify-content: space-evenly;
-    order: 2;
-    display: flex;
-    flex-wrap: wrap;
-}
-#tret{
-    flex-direction:column;
-    justify-content: space-evenly;
-    order: 3;
-    display: flex;
-    flex-wrap: wrap;
-}
-.otazka{
-    order: 1; 
-    width: 30%;
-}
-.odpoved{
-    order:2;
-    width:70%;
-}
+    #kratot{
+        width: 50%;
+        justify-content: flex-start;
+        order: 1;                               /*dlouhé otázky, krátké odpovědi*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #ot{                        /*jednotlivé otázky v této kategorii*/
+        width: 100%;
+    }
+            #otazka1{
+                                        /*v případě potřeby změnit fonty/barvy
+                                        /velikosti těhle otázek a odpovědí*/
+        }
+            #odpoved1{
+
+        }
+    #dlouhot{
+        width: 50%;
+        flex-direction:column;          /*jedna otázka s dlouhou odpovědí*/
+        justify-content: space-evenly;
+        order: 1;                               
+        display: flex;
+        flex-wrap: wrap;
+    }
+            .otazka2{
+                order: 1; 
+                width: 40%;
+        }
+            .odpoved2{
+                order:2;                    /*otázky a odpovědi k této otázce*/
+                width:60%;
+        }
