@@ -129,7 +129,7 @@ nav:hover {
     padding: 1em;
 }
 #Vp:hover,#Hs:hover,#On:hover,#Up:hover,#Do:hover{
-    color: rgb(35, 35, 39);
+    color: rgb(95, 95, 95);
     transition: 0.5s ease;
     font-size: 1.6em;
     font-weight: bold;
@@ -220,6 +220,8 @@ nav:hover {
 /*Nastavení zbytku elementů na hlavní straně*/
 h1{
     text-align: center;
+    color:  rgb(95, 95, 95);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #frontpage{
     background-image: url(pics/background.png);
