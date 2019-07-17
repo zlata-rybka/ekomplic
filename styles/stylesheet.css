@@ -112,6 +112,15 @@ nav:hover {
     background-color: rgb(224, 224, 224);
     transition: 0.5s ease;;
 }
+#usa,#cz{
+    height: 3em;
+    width: 3em;
+}
+#vlajka{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    transition: 0.5s ease;
+}
 #Hs {
     text-align: center;
     text-decoration: none;
@@ -128,14 +137,6 @@ nav:hover {
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 2;
-    padding: 0.5em;
-}
-#Up {
-    transition: 0.5s ease;
-    text-decoration: none;
-    color: rgb(59, 59, 59);
-    font-size: 1.4em;
-    order: 3;
     padding: 0.5em;
 }
 #On {
@@ -365,4 +366,17 @@ button{
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
+}
+#onas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#s1{
+    order:1;
+    width: 50%;
+}
+#s2{
+    order:2;
+    width: 50%;
 }
