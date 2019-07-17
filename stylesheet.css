@@ -48,7 +48,7 @@ title{
 /*Nastavení footeru*/
 #foot {
     padding: 1em;
-    background-color: rgb(0, 42, 119);
+    background-color: rgb();
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -59,7 +59,7 @@ title{
     clear: both;
 }
 #foot:hover{
-    background-color: rgb(143,162,213);
+    background-color: rgb(150, 150, 150);
     transition: 0.2s ease;
 }
 #foot1 {
@@ -166,7 +166,7 @@ nav:hover {
     
 }
 #emily:hover,#jose:hover,#lenny:hover,#napoleon:hover,#shaun:hover,#tiffany:hover{
-    background-color: rgb(0, 42, 119);
+    background-color: rgb(90, 90, 90);
     font-size: 1.5rem;
     padding: 1.5em;
     transition: 0.7s ease;
@@ -221,7 +221,7 @@ nav:hover {
 h1{
     text-align: center;
     color:  rgb(95, 95, 95);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #frontpage{
     background-image: url(pics/background.png);
@@ -229,7 +229,7 @@ h1{
     margin: 5em;
 }
 button{
-    background-color: rgb(26, 29, 226); 
+    background-color: rgb(90,90,90); 
     border: solid, 0.5em, rgb(143,162,213);
     color: white;
     padding: 1em;
