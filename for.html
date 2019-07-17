@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <script src="scripts/for.js"></script>
+            
             <link rel="stylesheet" type="text/css" href="styles/for.css">
             
 
@@ -10,53 +10,38 @@
         <div id="container">
             <img class="header" src="pics/banner.jpg" alt="banner" >
         </div>
-        <div class="signin">
-            <div id="heading">
-                <h2>
-                    <b>REGISTRACE</b>
-                    <br>
-                </h2>
-            </div>
-            <div class="form1 parent">
-                <form>
-                    <div class="row"> 
-                        <h1>Přezdívka:</h1>
-                        <input id="alias" type="text">
-                    </div>
-                    <div class="row">
-                        <h1>Pohlaví</h1>
-                        <input name="gender" id="genderm" type="radio" value="male">muž
-                        <input name="gender" id="genderf" type="radio" value="female">žena
-                        <input name="gender" id="gendero" type="radio" value="other">jiné
-                    </div>
-                    <div class="row">
-                        <h1>Místo působení:</h1>
-                        <input id="area" type="text">
-                    </div>
-                    <div class="row">
-                        <h1>Činnost:</h1>
-                        <input id="activity" type="text">
-                    </div>
-                    <div class="row">
-                        <h1>Spolupráce:</h1> 
-                        <input id="onetime" type="button" class="btn" value="jednorázová">
-                        <input id="fulltime" type="button" class="btn" value="dlouhodobá">
-                        <input id="waitandsee" type="button" class="btn" value="uvidí se">
-                    </div>
-                    <div class="row">
-                    <button type="submit"id="submit">Registrovat se</button>
-                    </div>
-                    <body>
-                        <span id="outputAlias">Alias</span>
-                        <span id="outputGender">Gender</span>
-                        <span id="outputArea">Area</span>
-                        <span id="outputActivity">Activity</span>
-                        <span id="outputOnetime"></span> 
-                        <span id="outputFulltime"></span>
-                        <span id="outputWaitandsee"></span>
-                    </body>
-                </form>
-            </div>
+        <div class="form1 parent">
+            <form id="signup" > 
+                <div class="row"> 
+                    <h1>Přezdívka:</h1>
+                    <input id="alias" name="alias"  type="text">
+                </div>
+                <div class="row">
+                    <h1>Pohlaví</h1>
+                    <input name="gender" id="gender" type="radio" value="male">muž
+                    <input name="gender" id="gender" type="radio" value="female">žena
+                    <input name="gender" id="gender" type="radio" value="other">jiné
+                </div>
+                <div class="row">
+                    <h1>Místo působení:</h1>
+                    <input id="area" name="area" type="text">
+                </div>
+                <div class="row">
+                    <h1>Činnost:</h1>
+                    <input id="activity" type="text">
+                </div>
+                <div class="row">
+                    <h1>Spolupráce:</h1> 
+                    <input id="coop" type="radio" class="btn" value="jednorázová">
+                    <input id="coop" type="radio" class="btn" value="dlouhodobá">
+                    <input id="coop" type="radio" class="btn" value="uvidím">
+                </div>
+                <div class="row">
+                <input  type="button" onclick="setCookie()">
+                </div>
+                <input  type="button" onclick="getCookie()">
+            </form>
         </div>
+        <script src="scripts/for.js"></script>
     </body>
-</html>
+    </html>
