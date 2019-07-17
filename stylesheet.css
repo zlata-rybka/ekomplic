@@ -250,13 +250,14 @@ button:hover {
 
 /*Nastavení profilů, textové části*/
 #vrsek{
-    justify-content: space-evenly;      /*nadřazený flex display*/
+    justify-content: space-around;   /*nadřazený flex display*/
     display: flex;                      
     flex-wrap: wrap;
+    flex-direction: row;
 }
     #levo{
         flex-direction:column;                  /*Levá strana stránky*/
-        width: 20%;
+        width: 30%;
         justify-content: space-evenly;
         order: 1;
         display: flex;
@@ -264,19 +265,41 @@ button:hover {
     }
         #obrazek{
             padding: 3em;                       /*Dvě podkategorie, obrázek a lokace*/
-            width: 80%;
+            width: 100%;
             order: 1;
         }
 
     #pravo{
-        align-items: flex-start;
-        width: 60%;                         /*Pravá strana stránky*/
+        width: 40%;                         /*Pravá strana stránky*/
         justify-content: space-evenly;
         order: 2;
         display: flex;
         flex-wrap: wrap;
     }
-        #zkus{
+            #ot{                        /*jednotlivé otázky v této kategorii*/
+        width: 100%;
+    }
+            #otazka1{
+                                        /*v případě potřeby změnit fonty/barvy
+                                        /velikosti těhle otázek a odpovědí*/
+        }
+            #odpoved1{
+
+        }
+ 
+#spodek{
+    justify-content: space-evenly;                 /*spodní část stránky*/       
+    display: flex;
+    flex-wrap: wrap;
+}
+    #kratot{
+        width: 60%;
+        justify-content: flex-start;
+        order: 1;                               /*dlouhé otázky, krátké odpovědi*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+           #zkus{
             order: 1;
             display: flex;                                  /*Dvě podkategorie*/
             flex-wrap: wrap;
@@ -290,37 +313,6 @@ button:hover {
             justify-content: space-evenly;
             flex-direction:column;
         }
-#spodek{
-    align-items: flex-start;
-    justify-content: space-evenly;                 /*spodní část stránky*/       
-    display: flex;
-    flex-wrap: wrap;
-}
-    #kratot{
-        width: 50%;
-        justify-content: flex-start;
-        order: 1;                               /*dlouhé otázky, krátké odpovědi*/
-        display: flex;
-        flex-wrap: wrap;
-    }
-        #ot{                        /*jednotlivé otázky v této kategorii*/
-        width: 100%;
-    }
-            #otazka1{
-                                        /*v případě potřeby změnit fonty/barvy
-                                        /velikosti těhle otázek a odpovědí*/
-        }
-            #odpoved1{
-
-        }
-    #dlouhot{
-        width: 50%;
-        flex-direction:column;          /*jedna otázka s dlouhou odpovědí*/
-        justify-content: space-evenly;
-        order: 1;                               
-        display: flex;
-        flex-wrap: wrap;
-    }
             .otazka2{
                 order: 1; 
                 width: 40%;
@@ -330,7 +322,7 @@ button:hover {
                 width:60%;
         }
             #mapa{
-        width: 100%;
+        width: 40%;
         justify-content: space-evenly;
         order: 2;
         display: flex;
