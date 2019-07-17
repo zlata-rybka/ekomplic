@@ -1,9 +1,346 @@
+/*obecná a nutná nastavení pro funkčnost
+nešahat na height, padding, margin!!!*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
 body{
     background-color: black;
-    color: beige;
-    
+    color: beige;   
+}
+#container{
+    min-height: 100%;
+    position: relative;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 3em;
 }
 title{
     font-family: serif;
     color: floralwhite;
+}
+
+
+
+/*Nastavení ikonek sociálních médií*/
+.sm {
+    transition: 0.2s ease;
+    height: 40px;
+    width: 40px;
+    transition: 1s ease;
+    padding-left: 8em;
+    padding-right: 8em;
+}
+.sm:hover{
+    width: 50px;
+    height: 50px;
+    transition: 0.2s ease;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+
+
+/*Nastavení footeru*/
+#foot {
+    padding: 1em;
+    background-color: rgb(0, 42, 119);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.2s ease;
+    position: relative;
+    height: 3em;
+    margin-top: -3em;
+    clear: both;
+}
+#foot:hover{
+    background-color: rgb(143,162,213);
+    transition: 0.2s ease;
+}
+#foot1 {
+    order:2;
+}
+#foot2{
+    order:3;
+    width: 20%;
+}
+#foot3 {
+    order:4;
+    width: 20%;
+}
+
+
+/*Nastavení banneru a nav baru*/
+nav {
+    margin: 0px;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(0, 42, 119);
+    transition: 0.5s ease;
+}
+nav:hover {
+    background-color: rgb(143,162,213);
+    transition: 0.5s ease;;
+}
+#Hs {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4em;
+    order: 1;
+    padding: 1em;
+    transition: 0.5s ease;
+}
+#Do {
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4em;
+    order: 2;
+    padding: 1em;
+}
+#Up {
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4em;
+    order: 3;
+    padding: 1em;
+}
+#On {
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4em;
+    order: 4;
+    padding: 1em;
+}
+#Vp {
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.4em;
+    order: 5;
+    padding: 1em;
+}
+#Vp:hover,#Hs:hover,#On:hover,#Up:hover,#Do:hover{
+    color: darkblue;
+    transition: 0.5s ease;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#banner {
+    width: 100%;
+    height: 20em;
+}
+
+
+
+/*Nastavení obrázků profilů na první straně*/
+#fpprof{
+    height: 23em;
+    width: 20em;
+    min-width: 20%;
+}
+
+
+
+/*Nastavení profilů na první straně*/
+#hotp{
+    margin: 4em;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+#emily{
+    padding: 2em;
+    order:1;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    transition: 0.7s ease;
+    
+}
+#emily:hover,#jose:hover,#lenny:hover,#napoleon:hover,#shaun:hover,#tiffany:hover{
+    background-color: rgb(0, 42, 119);
+    font-size: 1.5rem;
+    padding: 2.5em;
+    transition: 0.7s ease;
+    
+}
+#jose{
+    transition: 0.7s ease;
+    padding: 2em;
+    order: 2;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+#lenny{
+    transition: 0.7s ease;
+    padding: 2em;
+    order: 3;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+#napoleon{
+    transition: 0.7s ease;
+    padding: 2em;
+    order: 4;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+#shaun{
+    transition: 0.7s ease;
+    padding: 2em;
+    order: 5;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+#tiffany{
+    transition: 0.7s ease;
+    padding: 2em;
+    order: 6;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*Nastavení zbytku elementů na hlavní straně*/
+h1{
+    text-align: center;
+}
+#frontpage{
+    background-image: url(pics/background.png);
+    background-repeat: round;
+    margin: 5em;
+}
+button{
+    background-color: rgb(26, 29, 226); 
+    border: solid, 0.5em, rgb(143,162,213);
+    color: white;
+    padding: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7em;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color:rgb(143,162,213);
+    color: rgb(26, 29, 226);
+  }
+
+/*Nastavení profilů, textové části*/
+#vrsek{
+    justify-content: space-evenly;      /*nadřazený flex display*/
+    display: flex;                      
+    flex-wrap: wrap;
+}
+    #levo{
+        flex-direction:column;                  /*Levá strana stránky*/
+        width: 20%;
+        justify-content: space-evenly;
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #obrazek{
+            padding: 3em;                       /*Dvě podkategorie, obrázek a lokace*/
+            width: 80%;
+            order: 1;
+        }
+        #loc{
+            width: 100%;
+            justify-content: space-evenly;
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    #pravo{
+        align-items: flex-start;
+        width: 60%;                         /*Pravá strana stránky*/
+        justify-content: space-evenly;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #zkus{
+            order: 1;
+            display: flex;                                  /*Dvě podkategorie*/
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction:column;
+        }
+        #momcil{
+            order: 2;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction:column;
+        }
+#spodek{
+    align-items: flex-start;
+    justify-content: space-evenly;                 /*spodní část stránky*/       
+    display: flex;
+    flex-wrap: wrap;
+}
+    #kratot{
+        width: 50%;
+        justify-content: flex-start;
+        order: 1;                               /*dlouhé otázky, krátké odpovědi*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+        #ot{                        /*jednotlivé otázky v této kategorii*/
+        width: 100%;
+    }
+            #otazka1{
+                                        /*v případě potřeby změnit fonty/barvy
+                                        /velikosti těhle otázek a odpovědí*/
+        }
+            #odpoved1{
+
+        }
+    #dlouhot{
+        width: 50%;
+        flex-direction:column;          /*jedna otázka s dlouhou odpovědí*/
+        justify-content: space-evenly;
+        order: 1;                               
+        display: flex;
+        flex-wrap: wrap;
+    }
+            .otazka2{
+                order: 1; 
+                width: 40%;
+        }
+            .odpoved2{
+                order:2;                    /*otázky a odpovědi k této otázce*/
+                width:60%;
+        }
+#nprofil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column; 
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
 }
