@@ -13,6 +13,11 @@ body{
   h2{
     font-size: 2em;
   }
+ .images{
+   margin-left: 0em;
+   order: initial;
+
+ }
   
   input[type=text] {
     width: 50%;
@@ -54,21 +59,21 @@ body{
     margin-left: 0px;
     margin-right: 0px;
   }
-  .signin{
+  .form1 {
     border: 0.5vh;
+    display: flex;
     border-color: gray;
     display: flex;
     background-color: white;
-    margin-left: 60%;
-    margin-right: auto;
+    margin-left: 65%;
+    margin-right: 5%;
     flex-direction: column;
   }
   #heading{
     margin-right: auto;
     margin-left: auto; 
-    color: gray;
-    
-    
-
+    color: gray; 
   }
+  
+
   
