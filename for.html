@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-            
+            <script src="for.js"></script>
             <link rel="stylesheet" type="text/css" href="for.css">
-            <script src="for.css"></script>
+            
 
     </head>
     <body>
@@ -14,34 +14,46 @@
             </p>
         </div>
         <div class="form1 parent">
-            <form action="/your-profile" method="get">
+            <form>
                 <div class="row"> 
                     <h1>Přezdívka:</h1>
-                    <input name="alias" type="text">
+                    <input id="alias" type="text">
                 </div>
                 <div class="row">
                     <h1>Pohlaví</h1>
-                    <input name="gender" type="radio" value="male">muž
-                    <input name="gender" type="radio" value="female">žena
-                    <input name="gender" type="radio" value="other">jiné
+                    <input name="gender" id="genderm" type="radio" value="male">muž
+                    <input name="gender" id="genderf" type="radio" value="female">žena
+                    <input name="gender" id="gendero" type="radio" value="other">jiné
                 </div>
                 <div class="row">
                     <h1>Místo působení:</h1>
-                    <input name="area" type="text">
+                    <input id="area" type="text">
                 </div>
                 <div class="row">
                     <h1>Činnost:</h1>
-                    <input name="activity" type="text">
+                    <input id="activity" type="text">
                 </div>
                 <div class="row">
                     <h1>Spolupráce:</h1> 
-                    <input name="cooperation" type="button" class="btn" value="jednorázová">
-                    <input name="cooperation" type="button" class="btn" value="dlouhodobá">
-                    <input name="cooperation" type="button" class="btn" value="uvidí se">
+                    <input id="onetime" type="button" class="btn" value="jednorázová">
+                    <input id="fulltime" type="button" class="btn" value="dlouhodobá">
+                    <input id="waitandsee" type="button" class="btn" value="uvidí se">
                 </div>
                 <div class="row">
-                <button type="submit" onclick="alert('WELCOME TO THE GAME')"><a href=index.html>Registrovat se</a></button>
+                <button type="submit"id="submit">Registrovat se</button>
                 </div>
+                <body>
+                    <span id="outputAlias">Alias</span>
+                    <span id="outputGender">Gender</span>
+                    <span id="outputArea">Area</span>
+                    <span id="outputActivity">Activity</span>
+                    <span id="outputOnetime"></span> 
+                    <span id="outputFulltime"></span>
+                    <span id="outputWaitandsee"></span>
+                    
+            
+            
+                </body>
             
 
 
