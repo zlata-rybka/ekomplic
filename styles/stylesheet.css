@@ -23,6 +23,17 @@ title{
     font-family: serif;
     color: floralwhite;
 }
+#content{
+    padding-right: 10%;
+}
+#menu{
+    position: fixed;
+    top:0;
+    right:0;
+    order: 2;
+    width: 10%;
+    height: 100%;
+}
 
 
 
@@ -88,10 +99,12 @@ table{
 
 /*Nastavení banneru a nav baru*/
 nav {
+    text-align: center;
     margin: 0px;
-    width: 100%;
+    height: 100%;
     display:flex;
-    justify-content: space-evenly;
+    flex-flow: column;
+    justify-content: space-around;
     background-color: rgb(224, 224, 224);
     transition: 0.5s ease;
 }
@@ -100,20 +113,22 @@ nav:hover {
     transition: 0.5s ease;;
 }
 #Hs {
+    text-align: center;
     text-decoration: none;
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 1;
-    padding: 1em;
+    padding: 0.5em;
     transition: 0.5s ease;
 }
 #Do {
+    text-align: center;
     transition: 0.5s ease;
     text-decoration: none;
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 2;
-    padding: 1em;
+    padding: 0.5em;
 }
 #Up {
     transition: 0.5s ease;
@@ -121,7 +136,7 @@ nav:hover {
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 3;
-    padding: 1em;
+    padding: 0.5em;
 }
 #On {
     transition: 0.5s ease;
@@ -129,7 +144,7 @@ nav:hover {
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 4;
-    padding: 1em;
+    padding: 0.5em;
 }
 #Vp {
     transition: 0.5s ease;
@@ -137,7 +152,7 @@ nav:hover {
     color: rgb(59, 59, 59);
     font-size: 1.4em;
     order: 5;
-    padding: 1em;
+    padding: 0.5em;
 }
 #Vp:hover,#Hs:hover,#On:hover,#Up:hover,#Do:hover{
     color: rgb(95, 95, 95);
@@ -147,6 +162,7 @@ nav:hover {
 }
 #banner {
     width: 100%;
+    padding-right: 10%;
 }
 
 
@@ -240,7 +256,6 @@ h3{
     color: rgb(59, 59, 59);
 }
 #frontpage{
-    background-image: url(pics/background.png);
     background-repeat: round;
     margin: 5em;
 }
@@ -271,32 +286,29 @@ button{
     color: rgb(255, 255, 255);
     border: solid yellow;
   }
-
-    
-}
 /*Nastavení profilů, textové části*/
-#vrsek{
+#top{
     justify-content: space-around;   /*nadřazený flex display*/
     display: flex;                      
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row;
 }
-    #levo{
-        flex-direction:column;                  /*Levá strana stránky*/
-        width: 30%;
+    #levo{                 /*Levá strana stránky*/
         justify-content: space-evenly;
         order: 1;
+        width: 40%;
         display: flex;
         flex-wrap: wrap;
     }
         #obrazek{
-            padding: 3em;                       /*Dvě podkategorie, obrázek a lokace*/
-            width: 100%;
+            padding: 3em; 
+            min-height: 40%;                      /*Dvě podkategorie, obrázek a lokace*/
+            min-width: 60%;
             order: 1;
         }
 
-    #pravo{
-        width: 40%;                         /*Pravá strana stránky*/
+    #pravo{   
+        width: 70%;                   /*Pravá strana stránky*/
         justify-content: space-evenly;
         order: 2;
         display: flex;
@@ -305,14 +317,6 @@ button{
             #ot{                        /*jednotlivé otázky v této kategorii*/
         width: 100%;
     }
-            #otazka1{
-                                        /*v případě potřeby změnit fonty/barvy
-                                        /velikosti těhle otázek a odpovědí*/
-        }
-            #odpoved1{
-
-        }
- 
 #spodek{
     justify-content: space-evenly;                 /*spodní část stránky*/       
     display: flex;
