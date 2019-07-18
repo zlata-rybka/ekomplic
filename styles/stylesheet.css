@@ -60,6 +60,7 @@ title{
 #foot {
     padding-left: 4em;
     padding-top: 1.5em;
+    display: flex;
     height: auto;
     background-color: rgb(150,150,150);
     flex-direction: row;
@@ -84,17 +85,6 @@ table{
     font-size: 1vw;
     color: rgb(59, 59, 59);
     min-width: 24%;
-}
-#foot1 {
-    order:2;
-}
-#foot2{
-    order:3;
-    width: 20%;
-}
-#foot3 {
-    order:4;
-    width: 20%;
 }
 
 
@@ -332,7 +322,7 @@ button{
         width: 100%;
     }
 #spodek{
-    justify-content: space-evenly;                 /*spodní část stránky*/       
+    justify-content: space-evenly;                /*spodní část stránky*/       
     display: flex;
     flex-wrap: wrap;
     padding-left: 7%;
@@ -342,6 +332,7 @@ button{
         width: 50%;
         height: auto;
         justify-content: flex-start;
+        flex-flow: column;
         order: 1;                               /*dlouhé otázky, krátké odpovědi*/
         display: flex;
         flex-wrap: wrap;
