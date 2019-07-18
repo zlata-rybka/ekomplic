@@ -13,3 +13,18 @@ function setCookie(cname, cvalue, exdays) {
   } 
  
 
+function dejToTam(classElement) {
+  
+  var testElements = document.getElementsByClassName(classElement);
+  var testDivs = Array.prototype.filter.call(testElements, function(testElement){
+    if(testElement.checked == false && testElement.type == 'radio') {
+      return;
+
+
+    }
+    var cvalue = testElement.value;
+    var idElement = testElement.id;
+    localStorage.setItem(idElement, cvalue)
+});
+  
+}
