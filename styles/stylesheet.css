@@ -58,9 +58,9 @@ title{
 
 /*Nastavení footeru*/
 #foot {
-    padding-left: 2vw;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-top: 3em;
+    height: auto;
     background-color: rgb(150,150,150);
     flex-direction: row;
     justify-content: space-around;
@@ -170,7 +170,7 @@ nav:hover {
 /*Nastavení obrázků profilů na první straně*/
 #fpprof{
     height: 10em;
-    width: 8em;
+    width: 9em;
 }
 
 
@@ -294,6 +294,7 @@ button{
     display: flex;                      
     flex-wrap: wrap;
     flex-flow: row;
+    padding: 16%;
 }
     #levo{                 /*Levá strana stránky*/
         justify-content: space-evenly;
@@ -303,9 +304,9 @@ button{
         flex-wrap: wrap;
     }
         #obrazek{
-            padding: 3em; 
-            min-height: 40%;                      /*Dvě podkategorie, obrázek a lokace*/
-            min-width: 60%;
+            padding: 3em;                       /*Dvě podkategorie, obrázek a lokace*/
+            height: 27em;
+            width: 23em;
             order: 1;
         }
 
