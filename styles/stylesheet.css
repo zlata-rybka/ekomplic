@@ -366,6 +366,15 @@ button{
             .odpoved2{
                 order:2;                    /*otázky a odpovědi k této otázce*/
                 width:100%;
+            
+        }
+        .otazka3{
+            order:3;
+            width: 100%;
+        }
+        .odpoved4{
+            order:4;
+            width: 100;
         }
             #mapa{
         width: 50%;
