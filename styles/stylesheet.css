@@ -385,7 +385,8 @@ button{
 
 }
 #content{
-    padding: 3%;
+    padding: 5%;
+    padding-right: 10%;
 }
 #usa:hover,#cz:hover{
     height: 3.5em;
@@ -411,7 +412,9 @@ button{
 #s1{
     order:1;
     width: 50%;
+    padding-right: 3%;
 }
 #s2{
     order:2;
     width: 50%;
+    padding-right: 3%;
