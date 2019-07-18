@@ -9,8 +9,35 @@
         <div id="container">
             <img class="header" src="pics/banner.jpg" alt="banner" >
         </div>
+        <div id="fotkyform">
+         <div class="animace">
+        
+               <div class="w3-content w3-section" style="max-width:500px">
+                   <img class="mySlides" src="pics/teamwork.jpg" style="189%">
+                   <img class="mySlides" src="pics/motivation.jpg" >
+                   <img class="mySlides" src="pics/success.jpg" >
+               </div>
 
-        <div class="form1">
+           <script>
+           var myIndex = 0;
+           carousel();
+
+           function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); 
+           }
+           </script>
+         </div>
+
+
+         <div class="form1">
             <form id="signup" > 
                 <div class="row"> 
                     <h1>Přezdívka:</h1>
@@ -41,7 +68,8 @@
                 <a href="hp.html"><input type="button" onclick="dejToTam('input')" value="přihlásit"></a>
                 </div>
             </form>
-        </div>
-        <script src="scripts/for.js"></script>
+         </div>
+         <script src="scripts/for.js"></script>
+         </div>
     </body>
-    </html>
+</html>
