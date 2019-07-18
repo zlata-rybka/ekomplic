@@ -250,10 +250,19 @@ h1{
     color:  rgb(95, 95, 95);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+h2{
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(150,150,150);
+}
+
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3vw;
     color: rgb(59, 59, 59);
+}
+p{
+    padding: 0%;
 }
 #frontpage{
     background-repeat: round;
@@ -289,13 +298,13 @@ button{
     border: solid rgb(182, 182, 182);
   }
 /*Nastavení profilů, textové části*/
+
 #top{
     justify-content: space-around;   /*nadřazený flex display*/
     display: flex;                      
     flex-wrap: wrap;
     flex-flow: row;
-    padding: 16%;
-}
+    }
     #levo{                 /*Levá strana stránky*/
         justify-content: space-evenly;
         order: 1;
@@ -316,6 +325,7 @@ button{
         order: 2;
         display: flex;
         flex-wrap: wrap;
+        padding-top: 3.5%;
     }
             #ot{                        /*jednotlivé otázky v této kategorii*/
         width: 100%;
@@ -324,9 +334,12 @@ button{
     justify-content: space-evenly;                 /*spodní část stránky*/       
     display: flex;
     flex-wrap: wrap;
+    padding-left: 7%;
+    padding-right: 10%;
 }
-    #kratot{
-        width: 60%;
+    #kratkaot{
+        width: 50%;
+        height: auto;
         justify-content: flex-start;
         order: 1;                               /*dlouhé otázky, krátké odpovědi*/
         display: flex;
@@ -348,18 +361,19 @@ button{
         }
             .otazka2{
                 order: 1; 
-                width: 40%;
+                width: 20%;
         }
             .odpoved2{
                 order:2;                    /*otázky a odpovědi k této otázce*/
-                width:60%;
+                width:100%;
         }
             #mapa{
-        width: 40%;
+        width: 50%;
         justify-content: space-evenly;
         order: 2;
         display: flex;
         flex-wrap: wrap;
+        padding: 3em; 
     }
 #nprofil{
     display: flex;
@@ -369,6 +383,9 @@ button{
     text-align: center;
     width: 100%;
 
+}
+#content{
+    padding: 3%;
 }
 
 
