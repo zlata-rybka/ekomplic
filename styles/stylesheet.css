@@ -40,11 +40,11 @@ title{
 /*Nastavení ikonek sociálních médií*/
 .sm {
     transition: 0.2s ease;
-    height: 40px;
-    width: 40px;
+    height: 4em;
+    width: 4em;
     transition: 1s ease;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
 }
 .sm:hover{
     width: 50px;
@@ -58,27 +58,31 @@ title{
 
 /*Nastavení footeru*/
 #foot {
-    padding-left: 4em;
-    padding-top: 1.5em;
-    display: flex;
-    height: auto;
     background-color: rgb(150,150,150);
-    flex-direction: row;
-    justify-content: space-around;
     transition: 0.2s ease;
-    clear: both;
+    
 
 }
 #foot:hover{
     background-color: rgb(150, 150, 150);
     transition: 0.2s ease;
 }
+footer{
+    padding: 1em;
+    padding-left: 5em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+}
 #kontakt{
+    width: 60%;
     order:1;
 }
 #socsite{
+    width: 40%;
     order: 2;
-    justify-content: space-evenly;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 table{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
