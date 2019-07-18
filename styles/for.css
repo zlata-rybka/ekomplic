@@ -6,8 +6,8 @@ body{
   }
 #fotkyform{
   display: flex;
-  height: 70vh;
-  margin-left: 10%;
+  height: 75vh;
+  margin-left: 8%;
 }
   p {
     font-size: 1em;
@@ -32,6 +32,7 @@ body{
     resize: vertical;
     background-color: rgb(1, 2, 46);
     color:rgb(255, 255, 255);
+    font-size: 1em;
   
   }
   input[type=button] {
@@ -69,7 +70,7 @@ body{
     margin-right: 0px;
   }
   .form1 {
-    margin-left: 30%;
+    margin-left: 37%;
     border: 3vh;
     width: 25%;
     display: flex;
@@ -92,6 +93,6 @@ body{
   
   
 .mySlides {
-  max-height: 70vh;
+  max-height: 75vh;
 }
   
