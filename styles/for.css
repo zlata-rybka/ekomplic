@@ -6,14 +6,14 @@ body{
   }
 #fotkyform{
   display: flex;
-  height: 75vh;
-  margin-left: 8%;
+  height: 80vh;
+  margin-left: 3%;
 }
   p {
     font-size: 1em;
   }
   h1 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   h2{
     font-size: 2em;
@@ -58,7 +58,7 @@ body{
 
   }
   .input{
-    font-size: 2%;
+    font-size: 1.5%;
   }
   .header{
     max-width: 80vw;
@@ -70,7 +70,7 @@ body{
     margin-right: 0px;
   }
   .form1 {
-    margin-left: 37%;
+    margin-left: 25%;
     border: 3vh;
     width: 25%;
     display: flex;
@@ -93,6 +93,6 @@ body{
   
   
 .mySlides {
-  max-height: 75vh;
+  max-height: 80vh;
 }
   
