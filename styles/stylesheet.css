@@ -93,7 +93,7 @@ table{
 
 
 /*Nastavení banneru a nav baru*/
-nav {
+nav{
     text-align: center;
     margin: 0px;
     height: 100%;
@@ -106,6 +106,15 @@ nav {
 nav:hover {
     background-color: rgb(224, 224, 224);
     transition: 0.5s ease;;
+}
+nav.mala{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 5em;
+      width: 100%;
+      flex-flow: row;
+
 }
 #Hs {
     text-align: center;
@@ -158,6 +167,11 @@ nav:hover {
 #banner {
     width: 100%;
     padding-right: 10%;
+}
+#banner.mala{
+    padding-top:5em;
+    padding-left: 0%;
+    padding-right: 0%; 
 }
 
 
@@ -423,3 +437,4 @@ button{
     order:2;
     width: 50%;
     padding-right: 3%;
+}
