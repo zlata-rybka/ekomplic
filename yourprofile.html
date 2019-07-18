@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <title>ekomplic</title>
 </head>
-    <body>
+    <body onload="getItem()">
         <div id="banner" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         </ol>
         <div class="carousel-inner">
@@ -43,7 +43,18 @@
             <a Id="Vp" href="yourprofile.html">Váš profil</a>
         </nav>
     </div> 
-   <input type="button" class="btn" onclick="dejToTam('alias')"> 
+    <div id="profil">
+      <h1>Váš profil</h1>
+      <div>
+        <span id="info">
+       </span>
+      </div>
+      <div id="logout">
+        <input type="button" class="btn" onclick="clearAllData()" value="odhlásit">
+        <a href="index.html"><input type="button" class="btn"  value="sing in"></a>
+      </div>
+  </div>
+   
                    
         
 

@@ -8,9 +8,7 @@ function setCookie(cname, cvalue, exdays) {
     localStorage.setItem(cname, cvalue);
   }
   
-  function getCookie(cname) {
-    var obsah = localStorage.getItem("login");
-  } 
+  
  
 
 function dejToTam(classElement) {
@@ -27,4 +25,29 @@ function dejToTam(classElement) {
     localStorage.setItem(idElement, cvalue)
 });
   
+}
+
+function getItem(){
+  var i;
+  var spanInfo = document.getElementById('info');
+
+
+  console.log("local storage");
+  for (i = 0; i < localStorage.length; i++)   {
+      console.log(localStorage.key(i) + "=[" + localStorage.getItem(localStorage.key(i)) + "]");
+      spanInfo.innerHTML = spanInfo.innerHTML + "<br/>" + localStorage.key(i) + ":" + localStorage.getItem(localStorage.key(i));
+  
+  }
+  
+  
+}
+function clearAllData() {
+  
+  localStorage.clear();
+  location.reload();
+
+}
+function goBackToSignIn() {
+  
+
 }
