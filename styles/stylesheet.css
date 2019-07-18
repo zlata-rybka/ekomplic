@@ -58,13 +58,12 @@ title{
 
 /*Nastavení footeru*/
 #foot {
-    background-color: rgb(150,150,150);
+    background-color: rgb(49, 49, 51);
     transition: 0.2s ease;
     
 
 }
 #foot:hover{
-    background-color: rgb(150, 150, 150);
     transition: 0.2s ease;
 }
 footer{
@@ -87,7 +86,7 @@ footer{
 table{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1vw;
-    color: rgb(59, 59, 59);
+    color: rgb(210, 199, 252);
     min-width: 24%;
 }
 
@@ -100,11 +99,11 @@ nav{
     display:flex;
     flex-flow: column;
     justify-content: space-around;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(201, 199, 228);
     transition: 0.5s ease;
 }
 nav:hover {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(218, 217, 247);
     transition: 0.5s ease;;
 }
 nav.mala{
@@ -256,7 +255,7 @@ nav.mala{
 /*Nastavení zbytku elementů na hlavní straně*/
 h1{
     text-align: center;
-    color:  rgb(95, 95, 95);
+    color:  rgb(201, 199, 228);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h2{
@@ -268,7 +267,7 @@ h2{
 h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
-    color: rgb(59, 59, 59);
+    color: rgb(181, 185, 240);
 }
 p{
     padding: 0%;
@@ -294,8 +293,11 @@ button{
     cursor: pointer;
 }
 .btn{
-    color: black;
-    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(22, 22, 29);
+    background-color: rgb(159, 158, 185);
     border: solid black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: auto;
@@ -386,8 +388,9 @@ button{
             order:4;
             width: 100;
         }
-            #mapa{
+        #mapa{
         width: 50%;
+        height: 20%;
         justify-content: space-evenly;
         order: 2;
         display: flex;
