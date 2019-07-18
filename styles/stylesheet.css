@@ -438,3 +438,9 @@ button{
     width: 50%;
     padding-right: 3%;
 }
+#profil{
+font-family: 'Courier New', Courier, monospace;
+font-size: 3em;
+text-align: center;
+
+}
