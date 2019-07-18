@@ -3,39 +3,13 @@ function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
-    var cvalue = document.getElementById("alias");
-    //var cvalue = document.getElementById("gender");//
-    //var cvalue = document.getElementById("area");//
-    //var cvalue = document.getElementById("activities");//
-    //var cvalue = document.getElementById("coop");//
-    
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    var cvalue = document.getElementById("alias").value + document.getElementById("gender").value + document.getElementById("area").value + document.getElementById("activity").value + document.getElementById("coop").value;
+    var cname = "login";
+    localStorage.setItem(cname, cvalue);
   }
   
   function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
+    var obsah = localStorage.getItem("login");
   } 
-  function checkCookie() {
-    var alias = getCookie("alias");
-    if (alias != "") {
-      alert("Welcome again " + alias);
-    } else {
-      user = prompt("Please login:", "");
-      if (user != "" && user != null) {
-        setCookie("alias", user, 365);
-      }
-    }
-  }
+ 
 
