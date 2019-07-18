@@ -387,12 +387,17 @@ button{
 #content{
     padding: 3%;
 }
-
-
+#usa:hover,#cz:hover{
+    height: 3.5em;
+    width: 3.5em;
+    transition: 0.5s ease;
+}
 #usa,#cz{
     height: 3em;
     width: 3em;
+    transition: 0.5s ease;
 }
+
 #vlajka{
     padding-left: 0.5em;
     padding-right: 0.5em;
